@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <title>Super Burger and Pizza</title>
+    <link 
+    rel="Shorcut Icon"
+    type="image/png"
+    href="part-e.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+
+body{
+    background: #fdf5ea;
+    overflow-x: hidden;
+}
+.container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 105%;
+    overflow: hidden;
+
+}
+.container_active{
+    overflow: hidden;
+}
+.img_container{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    background:linear-gradient(45deg,#1a1a1a,#454444);
+    width: 100%;
+    height: 350px;
+    /* overflow-y: hidden; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img_container img{
+    position: absolute;
+    top: -60px;
+    left: 0;
+    width: 100%;
+    height: 107%;
+    filter: drop-shadow(0 40px 20px rgba(79, 44, 7, 0.235));
+}
+.discription{
+    position: absolute;
+    top: 300px;
+    border-radius: 40px 40px 0 0 ;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(45deg,#f78e2c,#f7b06d);
+    box-shadow: 0 0 30px 5px rgba(186, 131, 80, 0.865),
+    inset 2px 5px 15px 0 rgba(255, 255, 255, 0.241);
+}
+.discription .txt-1{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 25px;
+    font-weight: 900;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: underline;
+}
+.discription .txt-2{
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    font-size: 18px;
+    color: #ffffff94;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.discription .txt-3{
+    position: absolute;
+    top: 140px;
+    left: 2%;
+    width: 96%;
+    font-size: 17px;
+    color: #fff;
+    font-style: italic;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.discription .txt-4{
+    position: absolute;
+    top: 20px;
+    right: 10%;
+    border-radius: 7px;
+    width: 90px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: #fff;
+    box-shadow: 0 0 15px 4px rgba(255, 255, 255,0.5);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0,0.2);
+    font-size: 22px;
+    color: #ee851c;
+    font-style: italic;
+    border: 1px solid rgba(0, 0, 0,0.1);
+    font-family: 'Josefin Sans', sans-serif;
+}
+.back_icon{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 100;
+}
+.back_icon div{
+    position: relative;
+    margin-top: 6px;
+    background: #ffffff;
+    width: 17px;
+    height: 3px;
+    border-radius: 0 30px 30px 0;
+}
+.back_icon .line-1{
+    transform: rotate(-40deg);
+}
+.back_icon .line-2{
+    transform: rotate(40deg);
+}
+.order{
+    position: absolute;
+    top: 520px;
+    width: 100%;
+}
+.order input{
+    width: 0px;
+    visibility: hidden;
+}
+.order button{
+    position: absolute;
+    width: 180px;
+    height: 45px;
+    left: calc(50% - 90px);
+    border: 1px solid rgba(255, 255, 255,0.2);
+    border-radius: 10px;
+    background: linear-gradient(45deg,#54b862,#74e483);
+    box-shadow: 1px 5px 15px -510px rgba(255, 255, 255,0.5);
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.order button a{
+    position: absolute;
+    top: 0;
+    color: #fff;
+    /* width: 100%; */
+    font-size: 30px;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+@media (min-width:550px) {
+    .img_container{
+        overflow: hidden;
+        background: #000;
+        height: 150%;
+    }
+    .img_container img{
+        left: calc(50% - 250px);
+        top: -130px;
+        width: 450px;
+        height: 550px;
+        box-shadow: none;
+    }
+    .discription{
+        height: 350px;
+        top: 350px;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="">
+            <div class="back_icon">
+                <div class="line-1"></div>
+                <div class="line-2"></div>
+            </div>
+        </a>
+        <div class="img_container">
+            <img src="../file/p2.jpg" alt="">
+        </div>
+        <div class="discription">
+            <p class="txt-1">Pepperoni Pizza</p>
+            <p class="txt-2" id="code">#P08 CODE</p>
+            <p class="txt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, voluptate!</p>
+            <p class="txt-4"><sapn>$250</sapn></p>
+
+        </div>
+        <div class="order">
+            <form action="" name="submit-to-google-sheet">
+                <input type="text" name="code" id="one">
+                <input type="text" name="location" id="two">
+                <button onclick="fun1()" type="submit"><a href="tel:0978787960" id="link"><i class="fa fa-phone"></i></a></button>
+            </form>
+        </div>
+    </div>
+<script>
+    const currentURL = window.location.href;
+var page_1 = '', 
+page_2 = '',
+page_3 = '',
+page_4 = ''
+var page_5 = '', 
+page_6 = '',
+page_7 = '',
+page_8 = ''
+var page_9 = '',
+page_10 = '',
+page_11 = '',
+page_12 = ''
+var page_13 = '', 
+page_14 = '',
+page_15 = '',
+page_16 = ''
+var page_17 = '', 
+page_18 = '',
+page_19 = '',
+page_20 = ''
+var page_21 = '', 
+page_22 = '',
+page_23 = '',
+page_24 = ''
+
+const URL = () => {
+    if(currentURL === page_1){}
+    if(currentURL === page_2){}
+    if(currentURL === page_3){}
+    if(currentURL === page_4){}
+    if(currentURL === page_5){}
+    if(currentURL === page_6){}
+    if(currentURL === page_7){}
+    if(currentURL === page_8){}
+    if(currentURL === page_9){}
+    if(currentURL === page_10){}
+    if(currentURL === page_11){}
+    if(currentURL === page_12){}
+    if(currentURL === page_13){}
+    if(currentURL === page_14){}
+    if(currentURL === page_15){}
+    if(currentURL === page_16){}
+    if(currentURL === page_17){}
+    if(currentURL === page_18){}
+    if(currentURL === page_19){}
+    if(currentURL === page_20){}
+    if(currentURL === page_21){}
+    if(currentURL === page_22){}
+    if(currentURL === page_23){}
+    if(currentURL === page_24){}
+}
+URL()
+const a = document.querySelector('#one')
+        const b = document.querySelector('#two')
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxiW0tewLXydPX4tqu40OFaW9gaE_EwmAEFnS4yquBxqQLhDCf3vscKR0PC-nBSGAx7/exec'
+        const form = document.forms['submit-to-google-sheet']
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+        if(!navigator.geolocation) {
+            throw new Error('No geo available')
+        }
+        function success(pos){
+            const lat = pos.coords.latitude;
+            const lng = pos.coords.longitude;
+            console.log(lat)
+            const code = document.querySelector('#code')
+            a.value = code.innerHTML
+            b.value = lat + ',' + lng
+        }
+        function error(){
+            alert('we cannot find ur locaton')
+        }
+        navigator.geolocation.getCurrentPosition(success,error)
+        const fun1 = () =>{
+            document.getElementById('link').click()
+        }
+</script>
+
+</body>
+</html>
