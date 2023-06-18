@@ -1,0 +1,130 @@
+
+body{
+    background: #f3e2e2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* overflow: hidden; */
+}
+.container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.container .image_a{
+    position: absolute;
+    left: calc(50% - 65px);
+    top: 230px;
+    width: 100%;
+}
+.container .image_a img{
+    width: 140px;
+    scale: 0;
+    filter: drop-shadow(0px 12px 7px rgba(0, 0, 0, 0.3));
+    animation: animation-1 0.8s 0s forwards;
+}
+@keyframes animation-1{
+    0%{
+        transform: translateX(20px);
+    }
+    100%{
+        scale: 1;
+    }
+}
+.container .image_b{
+    position: absolute;
+    top: -350px;
+    left: 250px;
+    width: 100%;
+    animation: animation-2 0.8s .8s forwards;
+}
+.container .image_b img{
+    width: 90px;
+}
+@keyframes animation-2{
+    0%{
+        top: -350px;
+        left: 270px;
+        scale: .7;
+    }
+    100%{
+        top: 180px;
+        left:calc(50% - 40px);
+        scale: 1;
+    }
+}
+.container .image_c{
+    position: absolute;
+    top: 230px;
+    left:calc(50% - 115px);
+    width: 100%;
+    animation: animation-3 0.4s 1.30s ease-out forwards;
+    scale: 0;
+    z-index: -100;
+
+}
+.container .image_c img{
+    width: 240px;
+    filter: drop-shadow(0 10px 10px rgba(0, 0, 0,0.4));
+}
+@keyframes animation-3{
+    0%{
+        scale: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        scale: 1;
+        transform: translateY(0px);
+    }
+}
+.container .image_d{
+    position: absolute;
+    top: 380px;
+    left: calc(50% - 150px);
+    width: 0%;
+    animation: animation-4 1.5s 2s ease-out forwards;
+    overflow-x: hidden;
+
+}
+.container .image_d img{
+    filter: drop-shadow(0 1px 1px rgba(255, 255, 255,0.4));
+    width: 300px;
+}
+@keyframes animation-4{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+.login{
+    position: absolute;
+    top: 490px;
+    left: 25%;
+    width: 50%;
+    height: 40px;
+    background: #f11120b9;
+    box-shadow: 3px 6px 25px -7px #f11120;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+.login a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+@media (min-width:550px) {
+    .login{
+        left:calc(50% - 125px);
+        width: 250px;
+        height: 40px;
+    }
+}

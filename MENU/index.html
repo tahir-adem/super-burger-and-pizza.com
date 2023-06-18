@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <title>Super Burger and Pizza</title>
+    <link 
+    rel="Shorcut Icon"
+    type="image/png"
+    href="../file/part-e.png"
+    >
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav_icon" onclick="nav_open()">
+            <div><div class="icon a"></div></div>
+            <div><div class="icon b"></div></div>
+            <div><div class="icon c"></div></div>
+        </div>
+        <nav>
+            <ul>
+                <li><img src="../file/logo_01.png" alt="" id="p_1"></li>
+                <li><p id="p_2">Super Burger</p></li>
+                <li><a href="../HOME/index.html">Home</a></li>
+                <li><a href="../MENU/index.html">menu</a></li>
+                <li><a href="../ABOUT/index.html">about</a></li>
+                <li><a href="#contact">contact us</a></li>
+            </ul>
+        </nav>
+        <div class="profile_btn" onclick="login()">
+            <img src="../file/profile_logo.png" alt="">
+        </div>
+        <!-- <div class="login">
+            <div class="close">
+                <span></span>
+                <span></span>
+            </div>
+            <p class="txt-1">sign up</p>
+            <form action="">
+                <label for="email" id="l-email-1">Email</label>
+                <input type="email" name="email" id="email-1" placeholder="email@gmail.com">
+                <label for="password" id="l-email-2">password</label>
+                <input type="email" name="email" id="email-2" placeholder="password">
+                <button type="submit">log in</button>
+            </form>
+        </div> -->
+        <header>
+            <div class="txt-1">
+                <p>Super Burger & Pizza</p>
+                <img src="../file/burger for txt.png" alt="">
+            </div>
+        </header>
+        <section>
+            <div class="search">
+                <i class="fa fa-search" id="search"></i>
+                <input type="text" value="" id="autocomplete" placeholder="Search Here">
+                <ul id="result">
+                </ul>
+            </div>
+            <div class="menu_nav">
+                <div class="option_1" onclick="fun_1()">
+                    <img src="../file/nav_1.png" alt="">
+                    <p>Burger</p>
+                </div>
+                <div class="option_2" onclick="fun_2()">
+                    <img src="../file/nav_2.png" alt="">
+                    <p>Pizza</p>
+                </div>
+                <div class="option_3" onclick="fun_3()">
+                    <img src="../file/nav_3.png" alt="">
+                    <p>Fast food</p>
+                </div>
+                <div class="option_4" onclick="fun_4()">
+                    <img src="../file/nav_4.png" alt="">
+                    <p>Juice</p>
+                </div>
+            </div>
+            <div class="sub_menu">
+                <div class="box">
+                    <a href="../SUB-MENU/sub_menu_1/index.html">
+                        <img src="../file/burger_1.png" alt="">
+                        <p class="txt_1">#B01 CODE</p>
+                        <p class="txt_2">Cheese Burger</p>
+                        <p class="txt_3">$300</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="../SUB-MENU/sub_menu_2/index.html">
+                        <img src="../file/burger_2.png" alt="">
+                    <p class="txt_1">#B02 CODE</p>
+                    <p class="txt_2">Bean Burger</p>
+                    <p class="txt_3">$330</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="../SUB-MENU/sub_menu_3/index.html">
+                        <img src="../file/burger_3.png" alt="">
+                    <p class="txt_1">#B03 CODE</p>
+                    <p class="txt_2">Mushroom Burger</p>
+                    <p class="txt_3">$350</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="../SUB-MENU/sub_menu_4/index.html">
+                        <img src="../file/burger_4.png" alt="">
+                    <p class="txt_1">#B04 CODE</p>
+                    <p class="txt_2">Beef Burger</p>
+                    <p class="txt_3">$350</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="../SUB-MENU/sub_menu_5/index.html">
+                        <img src="../file/burger_5.png" alt="">
+                    <p class="txt_1">#B05 CODE</p>
+                    <p class="txt_2">Salmon Burger</p>
+                    <p class="txt_3">$350</p>
+                    </a>
+                </div>
+                <div class="box">
+                    <a href="../SUB-MENU/sub_menu_6/index.html">
+                        <img src="../file/burger_6.png" alt="">
+                    <p class="txt_1">#B06 CODE</p>
+                    <p class="txt_2">Veggie Burger</p>
+                    <p class="txt_3">$300</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!---->
+        <footer>
+            <div class="contact" id="contact">
+                <p class="txt-1">Contact Us</p>
+                <div class="addr">
+                    <i class="fa fa-map-marker"></i>
+                    <p class="txt-1">Gonder , Ethiopia</p>
+                </div>
+                <div class="tel">
+                    <i class="fa fa-phone"></i>
+                    <p class="txt-1"><a href="tel:+251978787960">+251978787960</a></p>
+                </div>
+                <div class="socialMedia">
+                    <a href=""><i class="fa fa-instagram"></i></a>
+                    <a href=""><i class="fa fa-telegram"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                </div>
+            </div>
+            <div class="copyr">
+                <p class="txt-1"><a href="">Rizmal Developer Team</a></p>
+                <p class="txt-2"><i class="fa fa-copyright"></i>__2023 All rights reserved</p>
+            </div>
+        </footer>
+    </div>
+<script src="demo.js"></script>
+
+</body>
+</html>
